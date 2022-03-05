@@ -1,5 +1,6 @@
 body {
   font-family: "Lato", sans-serif;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -103,7 +104,6 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 65%;
-  float: right;
 }
 
 form button {
@@ -129,12 +129,14 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   header {
     background-color: #ff385c;
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   header nav {
@@ -143,6 +145,7 @@ footer p {
 
   form {
     flex-direction: row;
+    flex-wrap:wrap;
   }
 
   .group {
@@ -151,12 +154,14 @@ footer p {
     justify-content: center;
     flex-flow: row nowrap;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .vacation-form .item {
     display: flex block;
     flex: 1 1 auto;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .item label
@@ -164,7 +169,8 @@ footer p {
   , .item select 
   , .item button{
     display: flex;
-    width: 100%
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .grid-column {
@@ -172,11 +178,13 @@ footer p {
     flex: 1;
     flex-direction: column; 
     margin: 10px;
+    flex-wrap: wrap;
   }
 
   .grid-row {
     display: flex;
     flex: 1;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
